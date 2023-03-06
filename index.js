@@ -9,6 +9,7 @@ const dotenv = require('dotenv');
 // middleware
 const helmet = require('helmet');
 
+const port = process.env.PORT || 8080;
 
 // IMAGES
 const { cloudinary } = require('./api/utils/cloudinary');
@@ -126,6 +127,6 @@ app.use((req, res, next) => {
       "<h1>Esta pagina no existe</h1>")
 })
 // le especificamos el puerto de escucha
-app.listen( 8800,() =>{
-    console.log('SERVER INICIADO');
+app.listen( port,() =>{
+    console.log('SERVER INICIADO ' , port);
 })
