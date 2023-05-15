@@ -23,7 +23,8 @@
     "validator": "^13.7.0"
   },
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "build": "npm run build"
   },
   "author": "",
   "license": "ISC"
