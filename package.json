@@ -24,7 +24,7 @@
   },
   "scripts": {
     "start": "nodemon index.js",
-    "build": "npm run build"
+    "build": "netlify deploy --prod"
   },
   "author": "",
   "license": "ISC"
